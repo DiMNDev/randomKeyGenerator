@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Press+Start+2P&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Impasse</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="word-input-container">
+        <div class="plusBtn">+</div>
+        <input type="text" class="input-box" />
+        <div class="word-container">
+          <div class="word-box">bafaloo</div>
+          <div class="word-box">bafaloo</div>
+          <div class="word-box">bafaloo</div>
+        </div>
+      </div>
+      <div class="generator-box">
+        <div class="generate-btn">generate</div>
+        <div class="generator-output">
+          <!-- <i class="fa copyIcon" hidden>&#xf0c5;</i> -->
+        </div>
+
+        <!-- <span>Include</span> -->
+
+        <div class="list-container">
+          <div class="list-item setLimit">
+            <input
+              type="text"
+              minlength="2"
+              maxlength="2"
+              id="lengthLimit"
+              value="16"
+            />
+          </div>
+          <span>Length</span>
+          <div class="list-item switchPhrase">
+            <input type="checkbox" id="checkPhrase" hidden /><label
+              for="checkPhrase"
+              class="checkmark"
+            ></label>
+          </div>
+          <span>Phrase</span>
+          <div class="list-item addIntegers">
+            <input type="checkbox" id="check1" hidden /><label
+              for="check1"
+              class="checkmark"
+            ></label>
+          </div>
+          <span>Integers</span>
+          <div class="list-item addSymbols">
+            <input type="checkbox" id="check2" hidden /><label
+              for="check2"
+              class="checkmark"
+            ></label>
+          </div>
+          <span>Symbols</span>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="dom.js"></script>
+  </body>
+</html>
