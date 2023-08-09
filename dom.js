@@ -89,7 +89,7 @@ phraseCheckbox.addEventListener("click", () => {
 const lengthBox = document.querySelector("#lengthLimit");
 
 lengthBox.addEventListener("change", () => {
-  if (lengthBox.value > 20 || lengthBox.value < 8) {
+  if (lengthBox.value > 32 || lengthBox.value < 8) {
     lengthBox.value = "";
   } else {
     passwordLength = lengthBox.value;
